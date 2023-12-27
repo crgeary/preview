@@ -2,6 +2,7 @@
   "name": "@crgeary/preview",
   "description": "Pull request previews with Github Actions",
   "scripts": {
+    "run:cli": "node --env-file=.env dist/index.js",
     "build": "esbuild --outdir=dist --bundle --analyze --minify --platform=node src/index.ts",
     "build:watch": "pnpm build --watch"
   },
