@@ -3,6 +3,6 @@ import * as github from "@actions/github";
 
 export async function main() {
   core.info(
-    JSON.stringify(github.context)
+    `Running type ${github.context.payload.action} for event ${github.context.eventName}`
   );
 }
