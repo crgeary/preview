@@ -1,0 +1,6 @@
+name: "Preview"
+description: "Pull request previews with Github Actions"
+
+runs:
+  using: node20
+  main: dist/index.js
