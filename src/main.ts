@@ -1,5 +1,5 @@
-import * as core from '@actions/core';
+import * as core from "@actions/core";
 
 export async function main() {
-    core.info('Hello, World!');
+  core.info("Hello, World!");
 }
