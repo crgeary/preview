@@ -2,8 +2,9 @@
   "name": "@crgeary/preview",
   "description": "Pull request previews with Github Actions",
   "scripts": {
+    "run:act": "act pull_request --eventpath .",
     "run:cli": "node --env-file=.env dist/index.js",
-    "build": "esbuild --outdir=dist --bundle --analyze --minify --platform=node src/index.ts",
+    "build": "esbuild --outdir=dist --bundle --analyze --minify --platform=node src/main.ts",
     "build:watch": "pnpm build --watch",
     "format": "prettier --write .",
     "format:check": "prettier --check ."
@@ -18,6 +19,7 @@
     "typescript": "^5.3.3"
   },
   "dependencies": {
-    "@actions/core": "^1.10.1"
+    "@actions/core": "^1.10.1",
+    "@actions/github": "^6.0.0"
   }
 }
